@@ -1,0 +1,54 @@
+1)REVERSE A STRING
+import java.util.Scanner;
+public class Reversestring {
+  public static void main(String[] args) {
+      String s;
+      System.out.println("enter the string");
+      Scanner sc=new Scanner(System.in);
+      s=sc.next();
+      char c[]=s.toCharArray();
+      for(int i=s.length()-1;i>=0;i--){
+          System.out.println(c[i]);
+      }}}
+2)REVERSE A NUMBER
+import java.util.Scanner;
+public class JavaApplication21 {
+  public static void main(String[] args) {
+      int n,s,REV = 0;
+      System.out.println("enter the number");
+      Scanner sc=new Scanner(System.in);
+      n=sc.nextInt();
+      while(n!=0){
+          s=n%10;
+          REV= REV*10+s;
+          n=n/10;
+          }
+    System.out.println("reversed number="+REV);  
+       }}
+PALLIANDROME
+import java.util.Scanner;
+public class JavaApplication21 {
+  public static void main(String[] args) {
+      int n,s,REV = 0,temp;
+      System.out.println("enter the number");
+      Scanner sc=new Scanner(System.in);
+      n=sc.nextInt();
+      temp=n;
+      while(n!=0){
+          s=n%10;
+          REV= REV*10+s;
+          n=n/10;
+          
+      }
+      System.out.println(REV);  
+       
+      if(REV==temp){
+          System.out.println("palliandrome");
+      }
+      else{
+          System.out.println(" not a palliandrome");
+      }}
+     
+}
+    
+    

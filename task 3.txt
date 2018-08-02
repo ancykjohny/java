@@ -1,0 +1,112 @@
+1)find the sum and average of 10 numbers
+
+import java.util.Scanner;
+public class Number{
+    public static void main(String[] args) {
+    int i,n;
+    double S=0,A=0;
+    System.out.println("enter the 10 numbers");
+    Scanner sc=new Scanner(System.in);
+    for(i=1;i<=10;i++)
+    {
+        n=sc.nextInt();
+        S=S+n;
+        
+    }
+    A=S/10;
+    System.out.println("sum is"+S);
+    System.out.println("average is"+A);
+    
+    }
+    
+}
+2)greatest among 10 numbers
+import java.util.Scanner;
+public class Greatest{
+public static void main(String[] args) {
+    int i,max;
+    int a[]=new int[10];
+    System.out.println("enter the numbers");
+    Scanner sc=new Scanner(System.in);
+     max = a[0];
+        for( i = 0; i < 10; i++)
+        {
+           a[i]=sc.nextInt();
+            if(max < a[i])
+            {
+                max = a[i];
+            }
+        }
+        System.out.println("Maximum value:"+max); 
+    }}
+3)even numbers
+import java.util.Scanner;
+class Even{
+    public static void main(String[]args){
+        int n,i;
+        int a[]=new int[20];
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the nimbers");
+        for(i=0;i<=20;i++){
+            n=sc.nextInt();
+            if(n%2==0)
+            {
+                a[i]=n; 
+            }
+            else{
+                System.out.println("");
+            }
+       
+            }
+    System.out.println(a[i]);
+ }}
+4) longest word in a string
+import java.util.Scanner;
+class Longestword {
+        public static void main(String[] args) {
+System.out.println("enter the string");
+String s1; 
+Scanner sc=new Scanner(System.in);
+ s1 =sc.next();
+ String[] s2=s1.split(" ");
+ String rts=null;
+ for(int i=0;i<s2.length;i++)
+ {
+     for(int j=i+1;j<s2.length;j++)
+     {
+         if(s2[i].length()<=s2[j].length()) {
+             rts= s2[j];   
+                 }
+     }
+ 
+ }
+           
+ System.out.println("longest string"+rts);
+
+}}
+5)REPEATED WORDS IN A SENTENCE
+import java.util.Scanner;
+public class Repaeatedword {
+     public static void main(String[] args) {
+         String s,w;
+         int c = 0;
+         System.out.println("enter the sentence");
+         
+         Scanner sc=new Scanner(System.in);
+         s=sc.nextLine();
+         System.out.println("enter the word");
+         w=sc.nextLine();
+         String s1[]=s.split(" ");
+         for (String s11 : s1){
+             if (s11.equals(w)) {
+                 c=c+1;
+             } 
+             
+         }
+         System.out.println("no:ofrepeated words="+c);
+         }
+         }
+         
+    
+    
+

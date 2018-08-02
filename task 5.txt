@@ -1,0 +1,19 @@
+public class Lowerupper {
+    public static void main(String[] args) {
+        String s="aB@Def$";
+        char c[]=s.toCharArray();
+        for(int i=0;i<s.length();i++){
+            if(Character.isLowerCase(c[i])){
+        System.out.println(Character.toUpperCase(c[i]));
+        }
+            else if(Character.isUpperCase(c[i])){
+                System.out.println(Character.toLowerCase(c[i]));
+            }
+            else if(i==2)
+                    {
+                        System.out.println("@");}
+                        else if(i==6){
+                            System.out.println("$");
+                                
+                        
+                    }
